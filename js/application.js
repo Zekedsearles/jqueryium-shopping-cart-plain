@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.remove').on('click', function() {
         $(this).closest("tr").remove();
+        calculateTotal()
     })
+    
 })
 function calculateTotal() {
     var overAllTotal = 0;
@@ -40,7 +42,10 @@ $(document).ready(function() {
         
         calculateTotal()
     })
-    //calling upon total function so it will run after page has been loaded
+    setInterval(function() {
+        calculateTotal()
+    }, 5000);
+    
     calculateTotal()
 
 })
