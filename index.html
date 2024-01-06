@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Shopping List</h1>
+      <h1 class="text-center">Shopping Cart</h1>
       <div class="row">
         <div class="col-12">
           <table class="table table-responsive">
@@ -34,32 +34,29 @@
             </thead>
             <tbody>
               <tr>
-                <td><input type="checkbox" class="item-checkbox"></td>
                 <td class="item">ham</td>
-                <td class="price mx-1"><input type="number" value="0" /></td>
-                <td class="quantity"><input type="number" value="0" /></td>
-                <td class="total"><input type="number" value="0" /></td>
+                <td class="price mx-1"><input type="number" value="10" /></td>
+                <td class="quantity"><input type="number" value="5" /></td>
+                <td class="total"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="item-checkbox"></td>
                 <td class="item">Corn</tb>
-                <td class="price mx-1"><input type="number" value="0" /></td>
-                <td class="quantity"><input type="number" value="0" /></td>
-                <td class="total"><input type="number" value="0" /></td>
+                <td class="price mx-1"><input type="number" value="12" /></td>
+                <td class="quantity"><input type="number" value="5" /></td>
+                <td class="total"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="item-checkbox"></td>
                 <td class="item">soup</tb>
-                <td class="price mx-1"><input type="number" value="0" /></td>
-                <td class="quantity"><input type="number" value="0" /></td>
-                <td class="total"><input type="number" value="0" /></td>
+                <td class="price mx-1"><input type="number" value="2" /></td>
+                <td class="quantity"><input type="number" value="3" /></td>
+                <td class="total"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
             </tbody>
           </table>
-          <form class="row-12" id="addToList">
+          <form class="col-12" id="addToList">
             <input name="item" type="text" placeholder="item name" required>
             <input name="item" type="number" placeholder="Price">
             <input name="item" type="number" placeholder="Qt.">
@@ -67,11 +64,9 @@
           </form>
           <div>
             <h3>Over All Total $ <span id="overAllTotal"></span></h3>
-            <h3>Items Still Needed <span id="stillNeed"></span></h3>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>
