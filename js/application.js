@@ -41,10 +41,12 @@ $(document).ready(function() {
           '</tr>');
         
         calculateTotal()
+
+        $('#addToList')[0].reset();
     })
-    setInterval(function() {
+    $(document).on('click', function() {
         calculateTotal()
-    }, 5000);
+    })
     
     calculateTotal()
 
