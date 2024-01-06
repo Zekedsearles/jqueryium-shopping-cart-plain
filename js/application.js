@@ -15,10 +15,12 @@ function calculateTotal() {
         quantity = isNaN(quantity) ? 0 : quantity;
         var total = price * quantity;
         $(this).find('.total').text(total.toFixed(2))
-        overAllTotal += total;
-        $('#overAllTotal').text(overAllTotal.toFixed(2));
-        
+        overAllTotal += total;  
     })
+    if ($('tbody tr').length === 0) {
+        overAllTotal = 0
+    }
+    $('#overAllTotal').text(overAllTotal.toFixed(2));
 }
 $(document).ready(function() {
     //remove button
